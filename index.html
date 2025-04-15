@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taqi Zaidi - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+  margin: 0;
+  padding: 0;
+  background: url('https://www.shutterstock.com/image-illustration/programming-code-abstract-technology-background-260nw-1887170134.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Dark overlay for readability */
+  z-index: -1;
+}
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffe5;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #00ffe5;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 4px solid #00ffe5;
+      box-shadow: 0 0 20px #00ffe5;
+      transition: transform 0.3s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-top: 20px;
+    }
+
+    .skills {
+      padding: 60px 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .skills h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #00ffe5;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .skills ul li {
+      margin: 10px 0;
+    }
+
+    .contact-btn {
+      margin-top: 40px;
+      background-color: #00ffe5;
+      color: black;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #00bfa6;
+    }
+
+    .contact-number {
+      margin-top: 20px;
+      font-size: 22px;
+      display: none;
+      color: #00ffe5;
+    }
+
+    .social {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+
+    .social a {
+      color: white;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #00ffe5;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+      color: gray;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Taqi Zaidi</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="https://scontent.fkhi22-1.fna.fbcdn.net/v/t39.30808-6/468831152_2048651182316705_1766979398235806072_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=2Ym21In0eLkQ7kNvwH9WDAh&_nc_oc=AdkFDVQaJ5gxturJ3TK5mcg3XmKCG69IzOLAb2QdLdxjBtUr2O99iQCkcePLlzYoAaM&_nc_zt=23&_nc_ht=scontent.fkhi22-1.fna&_nc_gid=xknH970af6gjIf6cWWNisg&oh=00_AfFEueKqUr6H7rFDJmg2JfaVax48HtxzlSUCKsH_8Rfr5g&oe=68040809" alt="Taqi's Picture" />
+    <h2>Hello, I’m Taqi Zaidi</h2>
+    <p>DEVOPS Engineer | Developer | Cybersecurity Learner</p>
+    <p>
+        My name is <strong>Syed Taqi Hussain Zaidi</strong>. I have completed my Bachelor's degree in Computer Science from <strong>Usman Institute of Technology</strong>, affiliated with <strong>NED University</strong>. During my academic journey, I developed a strong foundation in both software development and system management. 
+      </p>
+      <p>
+        I have hands-on experience with modern development tools and technologies including <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Git</strong>, <strong>GitHub</strong>, <strong>SQL</strong>, and <strong>Linux</strong>. I’m passionate about learning new technologies and continuously improving my skills, especially in areas related to DevOps and Cybersecurity.
+      </p>
+      
+
+    <div class="social">
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>💻 3D Modeling & Animation (Unreal Engine, Blender)</li>
+      <li>🌐 Web Development (HTML, CSS, Laravel, Node.js)</li>
+      <li>🔐 Cybersecurity Basics</li>
+      <li>🐧 DevOps & Linux Fundamentals</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <button class="contact-btn" onclick="showNumber()">Show Contact Number</button>
+    <div class="contact-number" id="contactNumber">📞 03171246126</div>
+    <div class="contact-email">📧 <a href="mailto:taqizaidi28@gmail.com">taqizaidi28@gmail.com</a></div>
+  </section>
+
+  <footer>
+    © 2025 Taqi Zaidi. All rights reserved.
+  </footer>
+
+  <script>
+    function showNumber() {
+      const contactDiv = document.getElementById('contactNumber');
+      contactDiv.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
